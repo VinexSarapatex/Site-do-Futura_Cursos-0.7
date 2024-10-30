@@ -1,0 +1,686 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(249, 249, 249);
+}
+
+a {
+  color: rgb(0, 0, 0);
+}
+.bar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0 10px;
+  background-color: rgb(42, 145, 78);
+  transition: 0.4s;
+
+  z-index: 5;
+}
+.lateralbar {
+  z-index: 4;
+  width: 300px;
+  position: fixed;
+  height: 100vh;
+  background-color: rgb(246, 246, 246);
+  box-shadow: 0 0 7px;
+  left: -350px;
+  transition: 0.2s;
+}
+
+.links {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  gap: 15px;
+}
+.containerShowMore {
+  display: none;
+}
+.showMore {
+  display: none;
+}
+.linkContainerC{
+  background-color: rgb(235, 235, 235);
+  border-radius: 6px;
+  margin-right: 5%;
+  padding: 10px;
+  padding-top: 15px;
+}
+.link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.2s;
+}
+.link:hover{
+  text-decoration: underline;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 35%;
+  height: 100%;
+  padding-left: 10px;
+  border-radius: 0 0 10px 0;
+  background-color: rgb(252, 252, 252);
+  transition: 0.2s;
+}
+
+.redes {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.linkinstagram {
+  background-color: rgb(233, 233, 233);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+.linkinstagram:hover {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  width: 50px;
+  height: 50px;
+}
+.instagram {
+  width: 40px;
+  transition: 0.2s;
+}
+.linkinstagram:hover .instagram {
+  filter: invert();
+}
+
+.linkfacebook {
+  background-color: rgb(233, 233, 233);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+.linkfacebook:hover {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(141, 141, 253);
+}
+
+.facebook {
+  width: 18px;
+  filter: grayscale();
+}
+.linkfacebook:hover .facebook {
+  filter: brightness(100);
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(59, 130, 52);
+}
+#main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0px;
+}
+.carousel1 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide 30s infinite;
+  padding-top: 60px;
+}
+.banner {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(0);
+  }
+  31% {
+    transform: translateX(-33.333%);
+  }
+  60% {
+    transform: translateX(-33.333%);
+  }
+  61% {
+    transform: translateX(-66.666%);
+  }
+  90% {
+    transform: translateX(-66.666%);
+  }
+  92% {
+    transform: translateX(0);
+  }
+}
+.buttonbanner {
+  position: absolute;
+  width: 8%;
+  height: 20%;
+  font-size: 25px;
+  background-color: rgb(101, 153, 101);
+  border: rgb(232, 255, 232) 3px solid;
+  border-radius: 20px;
+  cursor: pointer;
+  top: 56%;
+  left: 52.7%;
+  color: rgb(254, 255, 244);
+  transition: 0.1s;
+}
+.buttonbanner:hover {
+  background-color: rgb(64, 95, 64);
+  border: rgb(177, 205, 177) 3px solid;
+}
+.button {
+  background: none;
+  border: solid 2px #b6c2ff;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.button:hover {
+  border: 5px #6e77a6;
+  background-color: #787e9e;
+}
+.titles {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.subtitles {
+  padding-top: 15px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.texts {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cursoscontainer {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+.cursosLink {
+  text-decoration: none;
+}
+
+.cursocontainer {
+  width: 20%;
+}
+.cursoimg {
+  width: 100%;
+  height: 230px;
+  background-color: rgb(223, 223, 223);
+  border-radius: 5px;
+  background-size: 130%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.cursoimg:hover {
+  background-size: 135%;
+}
+.cursoscontainerC {
+  display: none;
+}
+
+section {
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 45px;
+}
+section h2 {
+  font-size: 30px;
+}
+section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+form label {
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+form input {
+  padding: 15px;
+  outline: none;
+  border: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+form input:focus {
+  border-radius: 16px;
+}
+form textarea {
+  padding: 10px;
+  outline: none;
+  border: 0;
+  font-size: 15px;
+  margin-bottom: 30px;
+  transition: all 0.5s;
+}
+form textarea:focus {
+  border-radius: 16px;
+}
+form select {
+  padding: 10px;
+  outline: none;
+  border: 0;
+  font-size: 15px;
+  margin-bottom: 30px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+form textarea:focus {
+  border-radius: 16px;
+}
+.btn {
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid rgb(42, 145, 78);
+  transition: all 0.3s;
+  margin-bottom: 20px;
+}
+.btn:hover {
+  background: rgb(42, 145, 78);
+  color: white;
+  border-radius: 16px;
+}
+
+.mapBox {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  background-color: #fff;
+}
+
+.mapBox iframe {
+  width: 100%;
+  height: 100%;
+}
+.informacoes {
+  display: flex;
+  margin-top: 50px;
+  gap: 20px;
+  flex-direction: column;
+}
+.endereco{
+  display: block;
+}
+.enderecoC{
+  display: none;
+}
+.facebook2{
+  gap: 10px; 
+  display: flex; 
+}
+.facebook2C{
+  display: none;
+  align-items: center; 
+  justify-content: center; 
+  flex-direction: column;
+}
+.containerComentario {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comentario {
+  margin-top: 50px;
+  border-radius: 5px;
+  width: 80%;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background-color: rgb(248, 248, 248);
+}
+.caixaComentario {
+  border-radius: 16px;
+  background-color: #fff;
+  width: 90%;
+  height: 250px;
+  display: flex;
+}
+.line2 {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(59, 130, 52);
+  display: block;
+}
+.mulherSobre {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+.sobre {
+  background-color: white;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.video {
+  width: 400px;
+  margin-right: 5%;
+  display: flex;
+  border-radius: 5px;
+}
+.textoSobre {
+  display: block;
+}
+.titleSobre {
+  display: flex;
+  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+}
+.textoSobreC{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.saberMaisContainer{
+  margin-top: 10px;
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 20px 20px 0px 0px;
+}
+.SaberMais{
+  font-size: 25px;
+  margin: 15px;
+}
+
+.Historia{
+  margin-top: 20px;
+  margin: 40px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titleHistoria{
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.textHistoria{
+  font-size: 25px;
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .links {
+    padding-right: 10%;
+    width: 30%;
+  }
+  .link {
+    font-size: 20px;
+  }
+  .link:hover {
+    font-size: 21px;
+  }
+
+  .image {
+    width: 50%;
+    height: 50%;
+  }
+
+  .redes {
+    gap: 2px;
+  }
+  .facebook {
+    width: 10px;
+  }
+  .linkfacebook {
+    width: 30px;
+    height: 30px;
+  }
+  .linkfacebook:hover {
+    width: 31px;
+    height: 31px;
+  }
+  .instagram {
+    width: 20px;
+  }
+  .linkinstagram {
+    width: 30px;
+    height: 30px;
+  }
+  .linkinstagram:hover {
+    width: 31px;
+    height: 31px;
+  }
+}
+
+/* Para Celular */
+@media (max-width: 1000px) {
+  .buttonbanner {
+    font-size: 10px;
+    top: 65%;
+    border-radius: 5px;
+  }
+  .titles {
+    font-size: 20px;
+  }
+
+  .subtitles {
+    font-size: 15px;
+  }
+
+  .texts {
+    text-align: center;
+  }
+
+  .linkinstagram {
+    display: none;
+  }
+  .instagram {
+    display: none;
+  }
+  .linkfacebook {
+    display: none;
+  }
+  .facebook {
+    display: none;
+  }
+
+  .image {
+    display: none;
+  }
+  .image2 {
+    display: block;
+    width: 100%;
+  }
+
+  .informations {
+    width: 100%;
+  }
+
+  .links {
+    display: none;
+  }
+  .link {
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .link:hover {
+    font-size: 20px;
+  }
+  .containerShowMore {
+    width: 50px;
+    height: 70%;
+
+    border-radius: 5px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    transition: 0.2s;
+  }
+  .showMore {
+    width: 24px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo {
+    border-radius: 0 0 0 10px;
+  }
+
+  .carousel {
+    display: none;
+  }
+
+  .cursoscontainerC {
+    width: 90%;
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .cursoimg {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 5px;
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .cursoimg:hover {
+    background-size: 165%;
+  }
+
+  .Contato {
+    flex-direction: column;
+  }
+
+  section {
+    width: 100%;
+  }
+  .mapBox {
+    width: 90%;
+    height: 300px;
+  }
+  .informacoes {
+    align-items: center;
+  }
+  .containerComentario {
+    display: none;
+  }
+
+  .line2 {
+    display: none;
+  }
+  .mulherSobre {
+    width: 200px;
+  }
+  .sobre {
+    height: 200px;
+  }
+  .textoSobre {
+    display: none;
+  }
+  .video {
+    width: 90%;
+    margin: 0%;
+  }
+  .titleSobre {
+    font-size: 20px;
+  }
+  .textoSobreC{
+    display: flex;
+  }
+
+  .Historia{
+    margin: 0px;
+  }
+  .titleHistoria{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .textHistoria{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .endereco{
+    display: none;
+  }
+  .enderecoC{
+    display: flex;
+  }
+  .facebook2{
+    display: none;
+  }
+  .facebook2C{
+    display: flex;
+  }
+}
